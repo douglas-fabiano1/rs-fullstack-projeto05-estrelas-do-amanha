@@ -5,8 +5,14 @@
 }
 
 :root {
-  font-size: 62.5%;
+  /*
+    rem = root EM(medida)
+    em = busca no pai(uma div por exemplo), não no root
+  */
+  font-size: 62.5%; /*padrão do navegador é 16px = 1rem, 62.5% = 10px, portanto 1rem = 10px, facilita o uso no css*/
   --font-family: "Poppins", sans-serif;
+  --text: normal 1.6rem/1.5 var(--font-family);
+  --text-sm: normal 1.4rem/1.4 var(--font-family);
   --h1: bold 3.2rem/1.2 var(--font-family);
   --h2: bold 2.4rem/1.2 var(--font-family);
   --h3: bold 2rem/1.2 var(--font-family);
@@ -43,4 +49,8 @@
   --blue: #b8cedc;
   --violet: #c3b2e7;
   --pink: #f682a5;
+}
+
+body {
+  overflow: hidden; /*Não permite rolagem/transbordamento*/
 }
