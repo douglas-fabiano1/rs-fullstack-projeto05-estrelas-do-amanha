@@ -30,7 +30,7 @@ main {
 }
 
 aside {
-  background-color: var(--surface-secodary);
+  background-color: var(--surface-secondary);
   padding: 6.4rem;
 
   & .aside-container {
